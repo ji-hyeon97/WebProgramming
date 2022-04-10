@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<filter>
+		<filter-name>loggingFilter</filter-name>
+		<filter-class>filter.LoggingFilter</filter-class>
+		<init-param>
+		<param-name>logFilename</param-name>
+		<param-value>c:\\temp\\loggingFilter.log</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>filter.EncodingFilter</filter-class>
+		<init-param>
+		<param-name>charset</param-name>
+		<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>authenFilter</filter-name>
+		<filter-class>filter.AuthenticationFilter</filter-class>
+		<init-param>
+		<param-name>adminID</param-name>
+		<param-value>ace</param-value>
+		</init-param>
+		<init-param>
+		<param-name>adminPW</param-name>
+		<param-value>12345</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>loggingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authenFilter</filter-name>
+		<url-pattern>/loginProcess.jsp</url-pattern>
+	</filter-mapping>
+</web-app>
