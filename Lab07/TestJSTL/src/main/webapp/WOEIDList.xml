@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ArrayOfWOEID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WOEID id="1">
+    <Code>4118</Code>
+    <City>Toronto</City>
+    <Country>Canada</Country>
+    <Latitude>43.64856</Latitude>
+    <Longitude>-79.385368</Longitude>
+  </WOEID>
+  <WOEID id="2">
+    <Code>44418</Code>
+    <City>London</City>
+    <Country>United Kingdom</Country>
+    <Latitude>51.507702</Latitude>
+    <Longitude>-0.12797</Longitude>
+  </WOEID>
+  <WOEID id="3">
+    <Code>2487956</Code>
+    <City>San Francisco</City>
+    <Country>United States</Country>
+    <Latitude>37.747398</Latitude>
+    <Longitude>-122.439217</Longitude>
+  </WOEID>
+  <WOEID id="4">
+    <Code>1132447</Code>
+    <City>Busan</City>
+    <Country>South Korea</Country>
+    <Latitude>35.170429</Latitude>
+    <Longitude>128.999481</Longitude>
+  </WOEID>
+</ArrayOfWOEID>
