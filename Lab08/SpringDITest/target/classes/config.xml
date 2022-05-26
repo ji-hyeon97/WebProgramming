@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="user1" class="kr.ac.dankook.User">
+<constructor-arg value="ace"/>
+<constructor-arg value="12345" type="int"/>
+</bean>
+<bean id="user2" class="kr.ac.dankook.User">
+<property name="name" value="Park"/>
+<property name="password" value="20"/>
+</bean>
+<bean id="user3" class="kr.ac.dankook.User"/>
+<bean id="userRepository" class="kr.ac.dankook.UserRepository">
+<property name="users">
+<list>
+<ref bean="user1"/>
+<ref bean="user2"/>
+<ref bean="user3"/>
+</list>
+</property>
+</bean>
+</beans>
